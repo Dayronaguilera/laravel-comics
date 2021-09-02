@@ -7,16 +7,28 @@
 
     <link rel="stylesheet" href="{{mix('/css/app.css')}}">
  
-    <title>Dc Comics</title> <!--- il titolo sara dinamico -->
+    <title>Dc Comics - @yield('title')</title> <!--- il titolo sara dinamico -->
 </head>
 <body>
-    <header>HEADER</header>
+    <header>
+        @include('templates.header')
+    </header>
 
-        <div class="container">
+    <div class="container">
             
-            @yield('content')
-        </div>       
+        @yield('content')
+    </div>
+    
+    <section>
+        @include('templates.sectionPayment')
+    </section>
+    
+    <footer>
+        @include('templates.footer')
+    </footer>
 
-    <footer>FOOTER</footer>
+    <section>
+        @include('templates.socialMedia')
+    </section>
 </body>
 </html>
