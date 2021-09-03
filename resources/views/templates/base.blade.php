@@ -11,24 +11,23 @@
 </head>
 <body>
     <header>
-        @include('templates.header')
+        @include('templates.header') <!-- richiamiamo i nostri template in base cosi da poter dividere i componenti -->
     </header>
 
-    <main class="main">
-            
-        @yield('content')
+    <main class="main">   
+        @yield('main') <!-- il nostro segna posto per il main che verra costruito in home -->
     </main>
     
     <section>
-        @include('templates.sectionPayment')
+        @include('templates.sectionPayment') <!-- richiamiamo i nostri template in base cosi da poter dividere i componenti -->
     </section>
     
     <footer>
-        @include('templates.footer')
+        @include('templates.footer') <!-- richiamiamo i nostri template in base cosi da poter dividere i componenti -->
     </footer>
 
     <section>
-        @include('templates.socialMedia')
+        @include('templates.socialMedia') <!-- richiamiamo i nostri template in base cosi da poter dividere i componenti -->
     </section>
 </body>
 </html>
