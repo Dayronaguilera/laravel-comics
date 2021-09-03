@@ -1,5 +1,7 @@
 .bg-top-footer{
     background-color: rgb(12, 99, 199);
+    display: flex;
+    justify-content: center;
     .container{
         width: 1280px;
         display: flex;

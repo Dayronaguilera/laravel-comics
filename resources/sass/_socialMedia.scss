@@ -1,6 +1,8 @@
 .social-media{
     background: rgb(46, 46, 46);
     color: white;
+    display: flex;
+    justify-content: center;
     .container{
         width: 1280px;
         display: flex;

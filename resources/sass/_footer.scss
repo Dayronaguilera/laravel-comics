@@ -1,17 +1,18 @@
 .bg-footer{
-    background: url(../../public/img/footer-bg.jpg);
+    background: url("/img/footer-bg.jpg");
     background-size: cover;
     position: relative;
     overflow: hidden;
-
+    
     .container{
         display: flex;
+        justify-content: center;
         padding: 50px;
         width: 1280px;
             .img-cont-footer{
                 img {
                     position: absolute;
-                    left: 65%;
+                    left: 70%;
                     top: 50%;
                     transform: translate(-50%, -50%);
                 } 

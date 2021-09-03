@@ -14,10 +14,10 @@
         @include('templates.header')
     </header>
 
-    <div class="container">
+    <main class="main">
             
         @yield('content')
-    </div>
+    </main>
     
     <section>
         @include('templates.sectionPayment')

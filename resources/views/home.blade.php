@@ -3,6 +3,6 @@
 
 @section('title', 'HomePage')
 
-@section('content')
+@section('main')
     <h1>qui andra il main!</h1>
 @endsection
