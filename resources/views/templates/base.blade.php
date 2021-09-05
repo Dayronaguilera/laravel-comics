@@ -18,8 +18,8 @@
         @yield('main') <!-- il nostro segna posto per il main che verra costruito in home -->
     </main>
     
-    <section>
-        @include('templates.sectionPayment') <!-- richiamiamo i nostri template in base cosi da poter dividere i componenti -->
+    <section class="payment">
+        @yield('payment') <!-- il nostro segna posto per la section payment che verra costruito in home -->
     </section>
     
     <footer>

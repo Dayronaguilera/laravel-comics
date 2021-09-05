@@ -14,7 +14,7 @@
                     <div class="cont-card">
                         <a href="/singleComics/{{ $loop->index }}"> <!-- con loop possiamo far si che ci ritorni un certo tipo di dato in questo caso un index che inviamo alla single card -->
                             <div class="img-container">
-                                <img src="{{$comicsSingle['thumb']}}" alt="">
+                                <img src="{{$comicsSingle['thumb']}}" alt="{{$comicsSingle['series']}}">
                             </div>
                             <span>{{$comicsSingle['series']}}</span>   
                         </a>
@@ -24,4 +24,9 @@
             </div>
         </div>
     </div>
+@endsection
+@section('payment') <!-- nel nostro segna posto di base a schermo si vedra questa section -->
+
+    @include('templates.sectionPayment') <!-- richiamiamo i nostri template in base cosi da poter dividere i componenti -->
+
 @endsection
