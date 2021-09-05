@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-
     $comics = config('comics'); // creiamo la variabile che richiama il nostro array(database)
+    
     return view('home', [
         'comics' => $comics // e facciamo ritornare la variabile da poter usare dove necessario - invia un argomento all'interno della funzione
     ]);
@@ -25,7 +25,7 @@ Route::get('/singleComics/{id}', function ($id) { // id e una variabile e la inv
     $comics = config('comics');
 
     return view('singleComics', [
-        "id" => $id-1,
+        'id' => $id, //inviamo le nostre variabili al componente che le richiamera
         'comics' => $comics
     ]);
 })->name('singleComics');

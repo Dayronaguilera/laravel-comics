@@ -1,7 +1,7 @@
 
 <!-- Per il moemnto inseriamo il nostro array manualmente e mettiamo return cosi che possa essere richiamato dove serve! -->
 <?php
-
+// TODO MODIFICARE I TITLE
 return [
     [
         "title" => "Action Comics #1000: The Deluxe Edition",

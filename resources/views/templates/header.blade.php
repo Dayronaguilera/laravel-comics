@@ -5,8 +5,12 @@
         </div>
         <div class="container-menu">
             <ul>
-                <!--possiamo richiamare la nostra route dichiarata in web.php-->
-                <li><a href="{{ route('homepage') }}">HOME <!--COMICS--></a></li> 
+                <!-- assegniamo alla li un classe dinamica cosi da modificarla se selezionata -->
+                <li class="{{ Request::route()->getName() === 'homepage' ? 'active' : ''}}">
+                    
+                    <!--possiamo richiamare la nostra route dichiarata in web.php-->
+                    <a href="{{ route('homepage') }}">COMICS</a>
+                </li> 
                 <li><a href="#">MOVIES</a></li>
                 <li><a href="#">TV</a></li>
                 <li><a href="#">GAMES</a></li>

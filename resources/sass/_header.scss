@@ -18,13 +18,17 @@
                  list-style: none;
                  display: flex;
                  li{
-                     padding:0px 15px;
+                     padding:10px 15px;
                      font-size: 13px;
                      font-weight: bold;
-                      cursor: pointer;
+                     cursor: pointer;
+                      &.active{
+                        background:rgb(53, 224, 230);
+                        border-radius: 5px;
+                      }
                       a{
                           text-decoration: none;
-                          color: rgb(156, 156, 156);
+                          color: rgb(184, 181, 181);
 
                          &:hover{
                              color: rgb(22, 123, 240);
